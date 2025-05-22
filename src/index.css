@@ -113,9 +113,7 @@
 }
 
 /* Global animation classes */
-.animate-fade-in {
-  @apply animate-fade-in;
-}
+/* Note: Removed circular dependency by removing the class that applied to itself */
 
 /* Dashboard card styles */
 .dashboard-card {
