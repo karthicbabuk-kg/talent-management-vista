@@ -32,7 +32,7 @@ const activities = [
   {
     id: 5,
     type: 'leave',
-    message: 'Robert Taylor's leave request approved',
+    message: "Robert Taylor's leave request approved",
     time: 'Yesterday'
   }
 ];
