@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,6 +12,8 @@ import EditEmployeePage from "./pages/EditEmployeePage";
 import AttendancePage from "./pages/AttendancePage";
 import LeavePage from "./pages/LeavePage";
 import NotFound from "./pages/NotFound";
+import OrganizationStructure from "./pages/OrganizationStructure";
+import DocumentManagement from "./pages/DocumentManagement";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,8 @@ const App = () => (
             <Route path="/employees/edit/:id" element={<EditEmployeePage />} />
             <Route path="/attendance" element={<AttendancePage />} />
             <Route path="/leave" element={<LeavePage />} />
+            <Route path="/organization" element={<OrganizationStructure />} />
+            <Route path="/documents" element={<DocumentManagement />} />
             
             {/* Default route redirects to login */}
             <Route path="/" element={<LoginPage />} />
